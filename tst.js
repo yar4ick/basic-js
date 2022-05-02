@@ -38,9 +38,8 @@ function sortByHeight(arr) {
   // remove line with error and write your code here
 
   return arr.sort((a, b) => {
-    // if (a < -1) return a;
-    // else return a - b;
-    return (a < -1) - (b < -1) || a - b;
+    if (a != -1) return a - b;
+    else return a;
   });
 }
 
